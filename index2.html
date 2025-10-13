@@ -3,67 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cerna Creations</title>
-    <meta name="description" content="Cerna Creations is a full-service design studio in Springfield VA specializing in branding, graphic design, motion design, illustration, 2D & 3D design, video editing, website development, and custom cards">
+    <title>Cerna Creations | Creative Design Studio</title>
+    <meta name="description" content="Cerna Creations is a small creative design and development studio in Springfield VA specializing in branding, design, illustration, motion design, and web development">
     <link rel="stylesheet" href="style.css">
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <header>
         <nav class="container">
-            <a href="#home" class="logo">Cerna Creations</a>
+            <a href="index2.html" class="logo"><img src="static/CernaCreationLogo.png" alt="Cerna Creations"></a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <button class="mobile-menu">☰</button>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="container">
-            <h1>Cerna Creations</h1>
-            <p>Your Creative Partner in Springfield, VA</p>
-            <p>From branding to t-shirts, we bring your vision to life</p>
-            <a href="#contact" class="cta-button">Get Started Today</a>
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-label">Small Studio. Big Ideas.</p>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">We create</span>
+                    <span class="hero-title-line">experiences that</span>
+                    <span class="hero-title-line">inspire</span>
+                </h1>
+                <p class="hero-description">A creative design & development studio in Springfield, VA crafting thoughtful brands, beautiful interfaces, and engaging motion design.</p>
+                <a href="#contact" class="cta-button">Let's Talk</a>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-grid">
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon icon-brand"></div>
-                    <h3>Branding & Identity</h3>
-                    <p>Create a memorable brand identity that sets you apart. We develop logos, color schemes, and brand guidelines that capture your unique story.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon icon-design"></div>
-                    <h3>Graphic Design</h3>
-                    <p>Eye-catching designs for all your marketing materials. From brochures to business cards, we make sure your brand looks professional.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon icon-motion"></div>
-                    <h3>Motion Design & Video</h3>
-                    <p>Bring your content to life with engaging motion graphics and professional video editing that captures attention and drives results.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon icon-web"></div>
-                    <h3>Website Design & Development</h3>
-                    <p>Modern, responsive websites that look great and perform even better. We build sites that convert visitors into customers.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon icon-cards"></div>
-                    <h3>Custom Cards</h3>
-                    <p>Beautiful custom cards for weddings, birthdays, holidays, and special occasions. Make every moment memorable with personalized designs.</p>
+            <div class="section-header">
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-subtitle">We're a small team with diverse skills, bringing creativity and technical expertise to every project.</p>
+            </div>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-number">01</div>
+                    <div class="service-content">
+                        <h3>Branding</h3>
+                        <p>Crafting unique visual identities that tell your story. From logo design to complete brand systems, we help you stand out.</p>
+                    </div>
+                    <div class="service-icon">✨</div>
                 </div>
 
+                <div class="service-item">
+                    <div class="service-number">02</div>
+                    <div class="service-content">
+                        <h3>Design</h3>
+                        <p>Beautiful, functional design for print and digital. Marketing materials, packaging, social media assets, and more.</p>
+                    </div>
+                    <div class="service-icon">🎨</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-number">03</div>
+                    <div class="service-content">
+                        <h3>Illustration</h3>
+                        <p>Custom illustrations and artwork that bring personality to your brand. From editorial to commercial work.</p>
+                    </div>
+                    <div class="service-icon">✏️</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-number">04</div>
+                    <div class="service-content">
+                        <h3>Motion Design</h3>
+                        <p>Engaging animations and motion graphics that capture attention. Perfect for social media, explainers, and presentations.</p>
+                    </div>
+                    <div class="service-icon">🎬</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-number">05</div>
+                    <div class="service-content">
+                        <h3>Development</h3>
+                        <p>Clean, responsive websites and web applications. We build digital experiences that work beautifully across all devices.</p>
+                    </div>
+                    <div class="service-icon">💻</div>
+                </div>
             </div>
         </div>
     </section>
@@ -71,18 +112,31 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
-                <div class="about-text">
-                    <h2>About Cerna Creations</h2>
-                    <p>Located in the heart of Springfield, Virginia, Cerna Creations is your local creative partner dedicated to bringing your vision to life. We're a small but mighty design studio that believes great design should be accessible to businesses of all sizes.</p>
-                    
-                    <p>Whether you're a startup looking for your first logo or an established business ready for a rebrand, we combine creativity with strategy to deliver results that matter. Our diverse skill set allows us to be your one-stop shop for all things design.</p>
-                    
-                    <p>We pride ourselves on personal service, quick turnarounds, and designs that truly reflect your brand's personality. Let's create something amazing together!</p>
+                <div class="about-visual">
+                    <div class="about-decoration">
+                        <div class="deco-circle"></div>
+                        <div class="deco-line"></div>
+                    </div>
                 </div>
-                
-                <div class="about-image">
-                    <div class="placeholder-image">
-                        Your Studio Photo Here
+
+                <div class="about-text">
+                    <p class="about-label">About the Studio</p>
+                    <h2>Small team, personal approach</h2>
+                    <p class="about-description">We're Cerna Creations, a small creative studio based in Springfield, Virginia. We believe the best work comes from close collaboration and genuine care for each project.</p>
+                    <p class="about-description">Whether you're launching something new or reimagining what already exists, we bring creativity, strategy, and technical skill to help you succeed. No project is too small, and every client gets our full attention.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,44 +145,67 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title" style="color: white;">Get In Touch</h2>
+            <div class="contact-header">
+                <h2>Let's work together</h2>
+                <p class="contact-subtitle">Have a project in mind? We'd love to hear about it. Drop us a message and we'll get back to you within 24 hours.</p>
+            </div>
+
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's Start Your Project</h3>
-                    <p>📍 Springfield, VA</p>
-                    <p>📧 walter@cernacreations.com</p>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Springfield, VA</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>walter@cernacreations.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💼</span>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon-Fri: 9am - 6pm EST</p>
+                        </div>
+                    </div>
                 </div>
-                
+
                 <form class="contact-form" action="#" method="POST" data-netlify="True">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
                     </div>
-                    
+
                     <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="service">Service Interested In</label>
-                        <select id="service" name="service" style="width: 100%; padding: 12px; border: none; border-radius: 8px; font-size: 1rem; background: rgba(255,255,255,0.9);">
+                        <label for="service">What do you need help with?</label>
+                        <select id="service" name="service">
                             <option value="">Select a service...</option>
-                            <option value="branding">Branding & Identity</option>
-                            <option value="graphic-design">Graphic Design</option>
-                            <option value="motion-design">Motion Design & Video</option>
-                            <option value="web-design">Website Design & Development</option>
-                            <option value="cards">Custom Cards</option>
-                            <option value="tshirts">T-Shirt Design & Printing</option>
+                            <option value="branding">Branding</option>
+                            <option value="design">Design</option>
+                            <option value="illustration">Illustration</option>
+                            <option value="motion-design">Motion Design</option>
+                            <option value="development">Development</option>
                             <option value="multiple">Multiple Services</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
-                        <label for="message">Tell Us About Your Project</label>
-                        <textarea id="message" name="message" placeholder="Describe your project, timeline, and budget range..." required></textarea>
+                        <label for="message">Tell us about your project</label>
+                        <textarea id="message" name="message" placeholder="Share details about your project, timeline, and budget..." rows="5" required></textarea>
                     </div>
-                    
+
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>

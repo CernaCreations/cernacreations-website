@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cerna Creations</title>
+    <meta name="description" content="Get in touch with Cerna Creations. We're ready to discuss your project and bring your creative vision to life. Based in Springfield, VA.">
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index2.html" class="logo"><img src="static/CernaCreationLogo.png" alt="Cerna Creations"></a>
+            <ul class="nav-links">
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="page-hero contact-hero">
+        <div class="container">
+            <p class="hero-label">Get In Touch</p>
+            <h1 class="page-title">Let's work <br>together</h1>
+            <p class="page-description">Have a project in mind? We'd love to hear about it. Drop us a message and we'll get back to you within 24 hours.</p>
+        </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Info -->
+                <div class="contact-sidebar">
+                    <div class="contact-info-block">
+                        <h3>Contact Information</h3>
+
+                        <div class="info-item-detailed">
+                            <span class="info-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:walter@cernacreations.com">walter@cernacreations.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item-detailed">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Springfield, Virginia<br>Serving clients locally & remotely</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item-detailed">
+                            <span class="info-icon">💼</span>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday<br>9:00 AM - 6:00 PM EST</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item-detailed">
+                            <span class="info-icon">⚡</span>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>Within 24 hours<br>(Usually much faster!)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <h3>What to Expect</h3>
+                        <ul class="expectation-list">
+                            <li>We'll respond within 24 hours</li>
+                            <li>Initial consultation is free</li>
+                            <li>We'll discuss your project goals</li>
+                            <li>Receive a custom quote</li>
+                            <li>Get started when you're ready</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <form class="contact-form-light" action="#" method="POST" data-netlify="True">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" placeholder="John Smith" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company" placeholder="Your Company">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">What do you need help with? *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="branding">Branding</option>
+                                <option value="design">Design</option>
+                                <option value="illustration">Illustration</option>
+                                <option value="motion-design">Motion Design</option>
+                                <option value="development">Web Development</option>
+                                <option value="multiple">Multiple Services</option>
+                                <option value="not-sure">Not Sure Yet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select a range...</option>
+                                <option value="under-1k">Under $1,000</option>
+                                <option value="1k-2.5k">$1,000 - $2,500</option>
+                                <option value="2.5k-5k">$2,500 - $5,000</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-plus">$10,000+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">When do you need this?</option>
+                                <option value="urgent">ASAP (Within 2 weeks)</option>
+                                <option value="soon">Soon (Within 1 month)</option>
+                                <option value="flexible">Flexible (1-3 months)</option>
+                                <option value="planning">Just Planning</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell us about your project *</label>
+                            <textarea id="message" name="message" placeholder="Share details about your project, goals, target audience, and any specific requirements..." rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span>Send me occasional updates and design tips</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn-light">Send Message</button>
+
+                        <p class="form-note">* Required fields. We respect your privacy and will never share your information.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Common Questions</h2>
+                <p class="section-subtitle">Quick answers to questions we hear most often</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How much do your services cost?</h3>
+                    <p>Every project is unique, so we provide custom quotes based on your specific needs. Simple logo designs might start around $500, while complete brand systems or website builds can range from $2,500-$10,000+. We'll always discuss budget upfront and find solutions that work for you.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What's your typical turnaround time?</h3>
+                    <p>It depends on the project scope. A simple logo might take 1-2 weeks, while a full website could be 4-8 weeks. We'll give you a realistic timeline during our initial conversation and keep you updated throughout the process.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you work with clients outside Virginia?</h3>
+                    <p>Absolutely! While we're based in Springfield, VA, we work with clients across the country. Most projects can be handled entirely remotely through video calls and online collaboration tools.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What if I need revisions?</h3>
+                    <p>Revisions are part of the process! We typically include 2-3 rounds of revisions in our projects, and we'll work with you until you're completely satisfied with the final result.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can you help with rush projects?</h3>
+                    <p>We can often accommodate rush timelines depending on our current workload. There may be a rush fee for projects requiring very quick turnaround, but we'll be transparent about that upfront.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you offer payment plans?</h3>
+                    <p>Yes! For larger projects, we typically split payment into milestones: a deposit to start, progress payments during the project, and final payment upon completion. We're flexible and can discuss payment structures that work for your budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternative Contact -->
+    <section class="alt-contact-section">
+        <div class="container">
+            <div class="alt-contact-content">
+                <h2>Prefer a different way to connect?</h2>
+                <p>You can also reach us directly at <a href="mailto:walter@cernacreations.com">walter@cernacreations.com</a> or give us a call if you'd rather talk through your project.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cerna Creations, LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
