@@ -362,35 +362,27 @@ gsap.from('.contact-form', {
 // ================================
 const contactForm = document.querySelector('.contact-form');
 
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        const submitBtn = this.querySelector('.submit-btn');
+        const originalText = submitBtn.textContent;
 
-    const submitBtn = this.querySelector('.submit-btn');
-    const originalText = submitBtn.textContent;
+        // Animate button on submit
+        gsap.to(submitBtn, {
+            scale: 0.95,
+            duration: 0.1,
+            yoyo: true,
+            repeat: 1,
+            onComplete: () => {
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+            }
+        });
 
-    // Animate button on submit
-    gsap.to(submitBtn, {
-        scale: 0.95,
-        duration: 0.1,
-        yoyo: true,
-        repeat: 1,
-        onComplete: () => {
-            submitBtn.textContent = 'Sending...';
-
-            // Simulate form submission (replace with actual form handling)
-            setTimeout(() => {
-                submitBtn.textContent = 'Message Sent!';
-                submitBtn.style.background = '#10b981';
-
-                setTimeout(() => {
-                    this.reset();
-                    submitBtn.textContent = originalText;
-                    submitBtn.style.background = '';
-                }, 2000);
-            }, 1500);
-        }
+        // Let Netlify handle the actual submission
+        // Form will submit normally and redirect to thank you page or show success
     });
-});
+}
 
 // Add focus animations to form inputs
 const formInputs = document.querySelectorAll('.form-group input, .form-group textarea, .form-group select');
